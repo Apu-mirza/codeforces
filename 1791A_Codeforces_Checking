@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+int main()
+{
+    int t, n, i;
+    cin>>t;
+    while(t--){
+        string str;
+
+        cin>>str;
+        int count = 0;
+            if(str == "c" || str == "o" || str == "d" || str=="e" || str=="f" || str=="r" || str=="s"){
+            cout<<"YES"<<endl;
+        }
+        else cout<<"NO"<<endl;
+    }
+}
