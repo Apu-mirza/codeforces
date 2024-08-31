@@ -13,7 +13,7 @@ int main()
         for(i=0; i<len; i++){
             if(s[i] == 'R'){
                 if(ansl > 0)
-                    ansl--;
+                    ansl = 0;
             }else{
                 ansl++;
                 ansll = max(ansl, ansll);
