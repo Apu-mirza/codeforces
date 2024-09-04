@@ -12,25 +12,15 @@ int main()
         for(i=0; i<n; i++){
             cin>>a[i];
         }
-        int first = a[0];
+        int first = a[n-1];
         int count = 0;
         int x = 0;
-        for(i=0; i<n; i++){
-            if(first > a[i]){
-                count++;
-                int y=i;
-                while(y>x){
-
-                    if(a[y-1] > a[i]) count++;
-                    else {
-                        first = a[i];
-                        break;
-                    }
-                    y--;
+        for(i=n-2; i>=0; i--){
+                if(first < a[i]){
+                    count++;
+                }else{
+                    first = a[i];
                 }
-                x = i;
-            }else
-                first=a[i];
         }
         cout<<count<<endl;
     }
