@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int small(int a, int b, int c){
+    if(a<b){
+        if(a<c) return a;
+        else return c;
+    }else{
+        if(b<c) return b;
+        else return c;
+    }
+}
+
+int main()
+{
+    int motu, tomu, n, k, t, i, j;
+    cin>>t;
+    while(t--){
+        int a, b, c;
+        long long sum=0;
+        cin>>a>>b>>c;
+        sum = a+b+c;
+        int smallest = small(a, b, c);
+
+        if(sum%9==0 && smallest >= sum/9) cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+    }
+}
