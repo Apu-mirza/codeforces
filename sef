@@ -1,0 +1,43 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+#define ll long long
+
+#define inf 9e18
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+    ll m,n,b,c,d,i,j,k,x,y,z,l,q,r;
+    string s,s1, s2, s3, s4;
+
+    ll cnt=0,cn=0,ans=0,sum=0 ;
+    cin>>n>>k;
+
+
+
+    for(i=0; i<k; i++)
+    {
+      m=n;
+      ll mn=inf, mx=-inf;
+      while(m>0)
+      {
+          mn=min(m%10 , mn );
+          mx=max(m%10 , mx);
+          m/=10;
+      }
+
+
+      if(mn==0)break;
+      n+=mn*mx;
+      //cout<<n<<" "<<mn<<" "<<mx<<endl;
+    }
+
+    cout<<n<<endl;
+    }
+
+return 0;
+}
