@@ -18,12 +18,10 @@ void solve(){
     for(i=0; i<n; i++){
         if(strr[i] == '0') number_of_zero++;
     }
-    if(number_of_zero%2 == 0){
-        if(number_of_zero%4 == 0) cout<<"DRAW"<<endl;
-        else cout<<"BOB"<<endl;
+    if(number_of_zero == 1 || number_of_zero%2 == 0){
+        cout<<"BOB"<<endl;
     }else{
-        if((number_of_zero-1)%4 == 0) cout<<"BOB"<<endl;
-        else if((number_of_zero+1)%4==0) cout<<"ALICE"<<endl;
+        cout<<"ALICE"<<endl;
     }
 
 
