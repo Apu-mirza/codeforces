@@ -1,0 +1,39 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <unordered_map>
+#include <cmath>
+#include<bits/stdc++.h>
+#define int long long
+#define int long long
+
+using namespace std;
+
+void solve(){
+        int n, k;
+        int m1, m2, m3;
+		cin >> n >> k;
+		if((n/2)%2 == 0 && n%2 == 0) {
+            m1 = n/2;
+            m2 = (n-n/2)/2;
+            m3 = m2;
+		}
+		else{
+            m1 = (n-1)/2;
+            m2 = (n-1)/2;
+            m3 = n-m1-m2;
+		}
+		cout<<m1<<" "<<m2<<" "<<m3<<endl;
+
+}
+
+int32_t main() {
+    int n;
+    int t;
+    cin>>t;
+    while(t--){
+        solve();
+    }
+    return 0;
+}
+
